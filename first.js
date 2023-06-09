@@ -3,7 +3,7 @@ function solve(arr){
     let profit=0;
     for(let i=1;i<arr.length;i++){
         if(arr[i]<buy){
-            buy=arr[i];
+            buy=arr[i]; // updating the buy if found a better price
         }
         if(arr[i]-buy>profit){
             profit=arr[i]-buy;
